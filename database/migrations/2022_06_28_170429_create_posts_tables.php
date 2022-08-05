@@ -8,7 +8,7 @@ class CreatePostsTables extends Migration
 {
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('post', function (Blueprint $table) {
             // this will create an id, a "published" column, and soft delete and timestamps columns
             createDefaultTableFields($table);
 
@@ -36,6 +36,6 @@ class CreatePostsTables extends Migration
     public function down()
     {
         Schema::dropIfExists('post_slugs');
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('post');
     }
 }

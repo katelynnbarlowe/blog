@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'posts' => [
+    'post' => [
         'title' => 'Posts',
         'module' => true,
     ],
